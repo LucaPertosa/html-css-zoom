@@ -13,6 +13,23 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pos-rel {
+    position: relative;
+    height: 100%;
+}
 /* GENERAL */
 .window-call {
     width: 100%;
@@ -31,6 +48,9 @@
     flex-wrap: wrap;
 }
 
+/* .arrow i {
+    font-size: 1rem;
+} */
 
 /* MAIN */
 /* Video Section */
@@ -72,11 +92,8 @@
 }
 
 .main-command {
-    width: 10%;
+    width: 15%;
     height: 100%;
-    /* debug */
-    background-color: red;
-
 }
 
 .room-command {
@@ -91,10 +108,10 @@
 }
 
 .quit-command {
-    width: 5%;
+    width: 6%;
     height: 100%;
     /* debug */
-    background-color: red;
+    background-color: var(--command-quitbg-color);
     position: absolute;
     top: 0;
     right: 0;
@@ -103,23 +120,75 @@
 /* Main-command */
 
 .main-command ul {
-    list-style-type: none;
     height: 100%;
     align-items: center;
     justify-content: space-around;
-
-
 }
+
+i {
+    font-size: 1.6rem;
+}
+
+.command-section .command-name {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+}
+
+.command-section .arrow i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    font-size: 1rem;
+}
+
 .mic-command {
     /* debug */
-    background-color: white;
+    color: white;
     width: 40%;
     height: 80%;
+    text-align: center;
+    line-height: 100%;
 }
 
 .camera-command {
     /* debug */
-    background-color: white;
-    width: 50%;
+    text-align: center;
+    color: white;
+    width: 60%;
     height: 80%;
+}
+
+
+/* Room-command */
+.room-command ul {
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box {
+    width: calc(100% / 9);
+    height: 80%;
+    background-color: white;
+}
+
+/* Quit-command */
+
+.quit-command a {
+    display: inline-block;
+    font-size: .85rem;
+    color: red;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quit-command:hover a {
+    text-decoration: underline;
 }
