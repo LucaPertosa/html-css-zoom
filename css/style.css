@@ -1,6 +1,31 @@
+/* VARIABLES */
+:root {
+    --video-section-bgcolor: #000000;
+    --command-section-color: #222222;
+    --command-quitbg-color: #4A4A4A;
+    --command-sharescr-color: #4BC800;
+}
+
 /* RESET */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+.window-call {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.video-section {
+    height: 92%;
+    background-color: var(--video-section-bgcolor);
+}
+
+.command-section {
+    height: 8%;
+    background-color: var(--command-section-color);
+}
+
