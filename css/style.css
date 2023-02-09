@@ -91,7 +91,10 @@ a {
     background-color: rgba(53, 53, 53, 0.5);
     text-transform: capitalize;
     color: white;
+}
 
+.user-name i {
+    font-size: 1rem;
 }
 
 /* Command Section */
@@ -189,4 +192,27 @@ i {
 
 .quit-command:hover a {
     text-decoration: underline;
+}
+
+/* WINDOW-CONTROL */
+.window-control {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+.view {
+    color: white;
+    text-transform: capitalize;
+    font-size: .8rem;
+    margin-left: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgba(164, 164, 164, 0.353);
+}
+
+.view i {
+    font-size: .8rem;
 }
